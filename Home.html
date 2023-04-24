@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home Page - portal</title>
+
+    <!-- Global stylesheets -->
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="limitless/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" />
+    <link href="limitless/global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" />
+    <link href="limitless/assets/css/all.min.css" rel="stylesheet" />
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script src="limitless/global_assets/js/main/jquery.min.js"></script>
+    <script src="limitless/global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    
+    <script>$(document).ready(function () {
+            var securityToken = $('input[name="__RequestVerificationToken"]').val();
+            var headers = {};
+            headers['__RequestVerificationToken'] = securityToken;
+            $.ajaxSetup({
+                headers: headers
+            });
+        });</script>
+    <!-- Theme JS files -->
+    <script src="limitless/global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/pickers/daterangepicker.js"></script>
+    <script src="limitless/global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+    <script src="limitless/global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+    <script src="limitless/global_assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+    <script src="limitless/global_assets/js/plugins/pickers/pickadate/legacy.js"></script>
+    <script src="limitless/global_assets/js/plugins/notifications/jgrowl.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/ui/prism.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/notifications/pnotify.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script src="limitless/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/forms/validation/validate.min.js"></script>
+    <script src="limitless/assets/js/app.js"></script>
+    <!-- /theme JS files -->
+
+</head>
+<body class="custom-scrollbars">
+<form action="" id="__AjaxAntiForgeryForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fuy9MKh2TpPnYXhYNHRx4ZBx16HGOiv3k97A-VGVBWfDijOGVzOyABxOgqb8Ror0_M_AeeFnfw7gwPD3xTmK3BCI-bO1ADy_OZDqqwFYw7vrNXmJpPSe5FohLf-ej1olUDHgh_cWZLO0l436eUtLG4" /></form>    <!-- Main navbar -->
+    <div class="navbar navbar-expand-lg navbar-light navbar-static">
+    <div class="d-flex flex-1 d-lg-none">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+            <i class="icon-paragraph-justify3"></i>
+        </button>
+        <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+            <i class="icon-transmission"></i>
+        </button>
+    </div>
+    <div class="navbar-brand text-center text-lg-left">
+        <a class="nav-link text-white p-0" href="">
+            <img src="img/icon-payment-global.svg" class="d-none d-sm-block" alt="">
+        </a>
+    </div>
+    <div class="collapse navbar-collapse order-2 order-lg-1" id="navbar-mobile">
+        <span class="badge badge-success my-3 my-lg-0 ml-lg-3">Online</span>
+    </div>
+    <ul class="navbar-nav flex-row order-1 order-lg-2 flex-1 flex-lg-0 justify-content-end align-items-center">
+        <li class="nav-item nav-item-dropdown-lg dropdown dropdown-user h-100">
+            <a href="#" class="navbar-nav-link navbar-nav-link-toggler dropdown-toggle d-inline-flex align-items-center h-100" data-toggle="dropdown" aria-expanded="false">
+                <img src="limitless/global_assets/images/placeholders/placeholder.jpg" class="rounded-pill mr-lg-2" height="34" alt="" />
+                <span class="d-none d-lg-inline-block">User's name</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+            </div>
+        </li>
+    </ul>
+</div>
+    <!-- /main navbar -->
+    <!-- Page content -->
+    <div b-lzi2xoo0z9 class="page-content">
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-light sidebar-main sidebar-expand-lg">
+	<!-- Sidebar content -->
+	<div class="sidebar-content">
+		<!-- User menu -->
+		<div class="sidebar-section sidebar-user my-1">
+			<div class="sidebar-section-body">
+				<div class="media">
+					<a class="mr-3" href="">
+						<img src="limitless/global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" alt="" />
+					</a>
+
+					<div class="media-body">
+						<div class="font-weight-semibold">User's name</div>
+						<div class="font-size-sm line-height-sm opacity-50">
+							Hello
+						</div>
+					</div>
+
+                    <div class="ml-3 align-self-center">
+                        <button type="button" class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
+                            <i class="text-dark icon-transmission"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-main-toggle d-lg-none">
+                            <i class="icon-cross2"></i>
+                        </button>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<!-- /user menu -->
+		<!-- Main navigation -->
+		<div class="sidebar-section">
+            <ul class="nav nav-sidebar" data-nav-type="accordion">
+                <!-- Main -->
+                <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
+                <li class="nav-item nav-item-submenu nav-item-open">
+                    <a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Payment Request</span></a>
+                    <ul class="nav nav-group-sub" data-submenu-title="Payment Request" style="display: block">
+                        <li class="nav-item"><a class="nav-link" href="PaymentRequest.html">Payment Request</a></li>
+                        <li class="nav-item"><a class="nav-link" href="CreatePaymentRequest.html">Create Payment Request</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="icon-copy"></i> <span>Cash Advance</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="icon-sphere"></i> <span>Cash Advance Settle</span></a></li>
+                <!-- /main -->
+            </ul>
+		</div>
+		<!-- /main navigation -->
+	</div>
+	<!-- /sidebar content -->
+
+</div>
+        <!-- /main sidebar -->
+        <!-- Main content -->
+        <div b-lzi2xoo0z9 class="content-wrapper">
+            <!-- Inner content -->
+            <div b-lzi2xoo0z9 class="content-inner">
+                <!-- Page header -->
+                <!-- /page header -->
+                
+<!-- Content area -->
+<div class="content">
+    <div class="container">
+        <div class="starter-template">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="PaymentRequest.html">
+                        <section class="menu-hover">
+                            <img src="https://cdn2.iconfinder.com/data/icons/shopping-297/128/Request-Money-Cash-Banking-512.png" width="100">
+                            <div class="menu-hover_inner">
+                                <h3>Payment Request</h3>
+                            </div>
+                        </section>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#">
+                        <section class="menu-hover">
+                            <img src="https://lh3.googleusercontent.com/zpZOOFwJfeCXtHad8Bfo-ojj_muO2j9HOxGQk62t7_jEpomGKPAG3730G0IO0pqVr_8" width="100">
+                            <div class="menu-hover_inner">
+                                <h3>Cash Advance</h3>
+                            </div>
+                        </section>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#">
+                        <section class="menu-hover">
+                            <img src="https://media.istockphoto.com/id/1183794806/vector/fast-coin-dollar-icon-for-stock.jpg?s=612x612&w=0&k=20&c=5p7aBrwem6QZGw-by_s7fVeFdA8LmO2h-lURDqycWw8=" width="80">
+                            <div class="menu-hover_inner">
+                                <h3><a href="#">Cash Advance Settle</a></h3>
+                            </div>
+                        </section>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /content area -->
+                <!-- Footer -->
+                <div class="navbar navbar-expand-lg navbar-light border-bottom-0 border-top">
+    <div class="text-center d-lg-none w-100">
+        <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+            <i class="icon-unfold mr-2"></i>
+            Footer
+        </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-footer">
+        <span class="navbar-text">
+            &copy; 2023 - portal - <a href="#">Privacy</a>
+        </span>
+    </div>
+</div>
+                <!-- /footer -->
+            </div>
+            <!-- /inner content -->
+        </div>
+        <!-- /main content -->
+    </div>
+    <!-- /page content -->
+    
+
+    <script src="js/site.js?v=wrKvJCitK2259D9Zspfa0NeZsmZV2s-eEIYTLoWWHIo"></script>
+    
+
+<!-- Visual Studio Browser Link -->
+<script type="text/javascript" src="_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="2fe992d3cece4182b83dc9bd9bd53c1d" data-requestMappingFromServer="false" data-connectUrl="http://localhost:59222/6edaf9a5bf624c62854966237a61d83d/browserLink"></script>
+<!-- End Browser Link -->
+
+<script src="_framework/aspnetcore-browser-refresh.js"></script></body>
+</html>

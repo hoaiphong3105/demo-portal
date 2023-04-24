@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login - Login</title>
+
+    <!-- Global stylesheets -->
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="limitless/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" />
+    <link href="limitless/global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" />
+    <link href="limitless/assets/css/all.min.css" rel="stylesheet" />
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script src="limitless/global_assets/js/main/jquery.min.js"></script>
+    <script src="limitless/global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    
+    <script>$(document).ready(function () {
+            var securityToken = $('input[name="__RequestVerificationToken"]').val();
+            var headers = {};
+            headers['__RequestVerificationToken'] = securityToken;
+            $.ajaxSetup({
+                headers: headers
+            });
+        });</script>
+
+</head>
+<body class="custom-scrollbars">
+<form action="Home/Login" id="__AjaxAntiForgeryForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fuy9MKh2TpPnYXhYNHRx4Yl9YzmKnr8HX3Z-_IQWSvMJsoJj-CaGhFu4G7FaN5xKv94NbQO0xXexsghCkMfhENekvr8HEp7J1YvwiLjrUkoeoOu7oY8vLVj62PZvvaEKT3bNGaO6ELlhQcPRwRsrcQ" /></form>    <!-- Page content -->
+    <div b-igxnuucc54 class="page-content">
+        <!-- Main content -->
+        <div b-igxnuucc54 class="content-wrapper">
+            <!-- Inner content -->
+            <div b-igxnuucc54 class="content-inner">
+                
+<!-- Content area -->
+<div class="content d-flex justify-content-center align-items-center">
+
+    <!-- Login form -->
+    <form class="login-form" action="index.html">
+        <div class="card mb-0">
+            <div class="card-body">
+                <div class="text-center mb-3">
+                    <i class="icon-reading icon-2x text-secondary border-secondary border-3 rounded-pill p-3 mb-3 mt-1"></i>
+                    <h5 class="mb-0">Login to your account</h5>
+                    <span class="d-block text-muted">Enter your credentials below</span>
+                </div>
+
+                <div class="form-group form-group-feedback form-group-feedback-left">
+                    <input type="text" class="form-control" placeholder="Username">
+                    <div class="form-control-feedback">
+                        <i class="icon-user text-muted"></i>
+                    </div>
+                </div>
+
+                <div class="form-group form-group-feedback form-group-feedback-left">
+                    <input type="password" class="form-control" placeholder="Password">
+                    <div class="form-control-feedback">
+                        <i class="icon-lock2 text-muted"></i>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <a href="Home.html" class="btn btn-primary btn-block">Sign in</a>
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <!-- /login form -->
+
+</div>
+<!-- /content area -->
+            </div>
+            <!-- /inner content -->
+        </div>
+        <!-- /main content -->
+    </div>
+    <!-- /page content -->
+    
+
+    <script src="js/site.js?v=wrKvJCitK2259D9Zspfa0NeZsmZV2s-eEIYTLoWWHIo"></script>
+    
+
+<!-- Visual Studio Browser Link -->
+<script type="text/javascript" src="_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="9dd8fc8837e845009b0af9e1734ababe" data-requestMappingFromServer="false" data-connectUrl="http://localhost:59222/6edaf9a5bf624c62854966237a61d83d/browserLink"></script>
+<!-- End Browser Link -->
+
+<script src="_framework/aspnetcore-browser-refresh.js"></script></body>
+</html>

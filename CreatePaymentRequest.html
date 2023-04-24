@@ -1,0 +1,669 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home Page - portal</title>
+
+    <!-- Global stylesheets -->
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="limitless/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" />
+    <link href="limitless/global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" />
+    <link href="limitless/assets/css/all.min.css" rel="stylesheet" />
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script src="limitless/global_assets/js/main/jquery.min.js"></script>
+    <script src="limitless/global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    
+    <script>$(document).ready(function () {
+            var securityToken = $('input[name="__RequestVerificationToken"]').val();
+            var headers = {};
+            headers['__RequestVerificationToken'] = securityToken;
+            $.ajaxSetup({
+                headers: headers
+            });
+        });</script>
+    <!-- Theme JS files -->
+    <script src="limitless/global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/pickers/daterangepicker.js"></script>
+    <script src="limitless/global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+    <script src="limitless/global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+    <script src="limitless/global_assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+    <script src="limitless/global_assets/js/plugins/pickers/pickadate/legacy.js"></script>
+    <script src="limitless/global_assets/js/plugins/notifications/jgrowl.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/ui/prism.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/notifications/pnotify.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script src="limitless/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script src="limitless/global_assets/js/plugins/forms/validation/validate.min.js"></script>
+    <script src="limitless/assets/js/app.js"></script>
+    <!-- /theme JS files -->
+
+</head>
+<body class="custom-scrollbars">
+<form action="Home/CreatePaymentRequest" id="__AjaxAntiForgeryForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fuy9MKh2TpPnYXhYNHRx4arlLwhbmMZOm392A32LohCZCfWomajbi0LXEPQ1tz-fSQZ4YQyfGEk4RBV_yD67p_uc2wni3TmfdpcXP2_iyr0UIjYg1MlnDTD7IK4tpNebwIYLBmAFZdFJux5pGhNRew" /></form>    <!-- Main navbar -->
+    <div class="navbar navbar-expand-lg navbar-light navbar-static">
+    <div class="d-flex flex-1 d-lg-none">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+            <i class="icon-paragraph-justify3"></i>
+        </button>
+        <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+            <i class="icon-transmission"></i>
+        </button>
+    </div>
+    <div class="navbar-brand text-center text-lg-left">
+        <a class="nav-link text-white p-0" href="">
+            <img src="img/icon-payment-global.svg" class="d-none d-sm-block" alt="">
+        </a>
+    </div>
+    <div class="collapse navbar-collapse order-2 order-lg-1" id="navbar-mobile">
+        <span class="badge badge-success my-3 my-lg-0 ml-lg-3">Online</span>
+    </div>
+    <ul class="navbar-nav flex-row order-1 order-lg-2 flex-1 flex-lg-0 justify-content-end align-items-center">
+        <li class="nav-item nav-item-dropdown-lg dropdown dropdown-user h-100">
+            <a href="#" class="navbar-nav-link navbar-nav-link-toggler dropdown-toggle d-inline-flex align-items-center h-100" data-toggle="dropdown" aria-expanded="false">
+                <img src="limitless/global_assets/images/placeholders/placeholder.jpg" class="rounded-pill mr-lg-2" height="34" alt="" />
+                <span class="d-none d-lg-inline-block">User's name</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+            </div>
+        </li>
+    </ul>
+</div>
+    <!-- /main navbar -->
+    <!-- Page content -->
+    <div b-lzi2xoo0z9 class="page-content">
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-light sidebar-main sidebar-expand-lg">
+	<!-- Sidebar content -->
+	<div class="sidebar-content">
+		<!-- User menu -->
+		<div class="sidebar-section sidebar-user my-1">
+			<div class="sidebar-section-body">
+				<div class="media">
+					<a class="mr-3" href="">
+						<img src="limitless/global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" alt="" />
+					</a>
+
+					<div class="media-body">
+						<div class="font-weight-semibold">User's name</div>
+						<div class="font-size-sm line-height-sm opacity-50">
+							Hello
+						</div>
+					</div>
+
+                    <div class="ml-3 align-self-center">
+                        <button type="button" class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
+                            <i class="text-dark icon-transmission"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-main-toggle d-lg-none">
+                            <i class="icon-cross2"></i>
+                        </button>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<!-- /user menu -->
+		<!-- Main navigation -->
+		<div class="sidebar-section">
+            <ul class="nav nav-sidebar" data-nav-type="accordion">
+                <!-- Main -->
+                <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
+                <li class="nav-item nav-item-submenu nav-item-open">
+                    <a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Payment Request</span></a>
+                    <ul class="nav nav-group-sub" data-submenu-title="Payment Request" style="display: block">
+                        <li class="nav-item"><a class="nav-link" href="PaymentRequest.html">Payment Request</a></li>
+                        <li class="nav-item"><a class="nav-link" href="CreatePaymentRequest.html">Create Payment Request</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="icon-copy"></i> <span>Cash Advance</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="icon-sphere"></i> <span>Cash Advance Settle</span></a></li>
+                <!-- /main -->
+            </ul>
+		</div>
+		<!-- /main navigation -->
+	</div>
+	<!-- /sidebar content -->
+
+</div>
+        <!-- /main sidebar -->
+        <!-- Main content -->
+        <div b-lzi2xoo0z9 class="content-wrapper">
+            <!-- Inner content -->
+            <div b-lzi2xoo0z9 class="content-inner">
+                <!-- Page header -->
+                <!-- /page header -->
+                
+<!-- Page header -->
+<div class="page-header page-header-light">
+    <div class="breadcrumb-line breadcrumb-line-light header-elements-lg-inline">
+        <div class="d-flex">
+            <div class="breadcrumb">
+                <a class="breadcrumb-item" href=""><i class="icon-home2 mr-2"></i> Home</a>
+                <span class="breadcrumb-item active">Create Payment Request</span>
+            </div>
+
+            <a href="#" class="header-elements-toggle text-body d-lg-none"><i class="icon-more"></i></a>
+        </div>
+
+    </div>
+</div>
+<!-- /page header -->
+<!-- Content area -->
+<div class="content">
+    <div class="card border-primary">
+        <div class="card-header bg-primary text-white header-elements-inline p-1">
+            <h6 class="card-title">Header</h6>
+        </div>
+        <div class="card-body">
+            <div class="d-flex align-items-center justify-content-between mb-2 w-100">
+                <a class="btn btn-sm btn-outline-primary btn-lg" href="PaymentRequest.html"><img class="mr-2" width="20" height="20" src="img/icon-back.svg" alt="">Back to list</a>
+                <a href="#" class="btn btn-sm btn-outline-primary btn-lg"><img class="mr-2" width="20" height="20" src="img/icon-save.svg" alt="">Save</a>
+                <a class="btn btn-sm btn-outline-success btn-lg" href="CreatePaymentRequest.html"><img class="mr-2" width="20" height="20" src="img/icon-add.svg" alt="">New</a>
+                <a href="#" class="btn btn-sm btn-outline-success btn-lg"><img class="mr-2" width="20" height="20" src="img/icon-duplicate.svg" alt="">Duplicate</a>
+                <a href="#" class="btn btn-sm btn-outline-danger btn-lg"><img class="mr-2" width="20" height="20" src="img/icon-delete.svg" alt="">Delete</a>
+                <span class="text-muted">|</span>
+                <a href="#" class="btn btn-sm btn-outline-primary btn-lg"><img class="mr-2" width="20" height="20" src="img/icon-refresh.svg" alt="">Refresh</a>
+                <a href="#" class="btn btn-sm btn-outline-primary btn-lg"><img class="mr-2" width="20" height="20" src="img/icon-submit.svg" alt="">Submit</a>
+                <a href="#" class="btn btn-sm btn-outline-indigo btn-lg"><img class="mr-2" width="20" height="20" src="img/icon-validate.svg" alt="">Validate</a>
+                <span class="text-muted">|</span>
+                <a href="#" class="btn btn-sm btn-outline-primary btn-lg"><img class="mr-2" width="20" height="20" src="img/icon-attach.svg" alt="">Attach File</a>
+                <a href="#" class="btn btn-sm btn-outline-primary btn-lg"><img class="mr-2" width="20" height="20" src="img/icon-attachment.svg" alt="">View Attachment</a>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- Payment request information -->
+                    <div class="card border-primary">
+                        <div class="card-header bg-primary-100 text-primary border-bottom-primary header-elements-inline p-1">
+                            <h6 class="card-title">Payment request information</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <form class="form-validate-jquery" action="#" novalidate="novalidate">
+                                <fieldset class="mb-3">
+                                    <!-- Requested By -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Requested By:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="requestedBy" name="" class="form-control" disabled value="Xuan Tran" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- /requested By -->
+                                    <!-- Document Number -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Document Number:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="documentNumber" name="" class="form-control" disabled value="PRFY22-000000037" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- /document Number -->
+                                    <!-- Company -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Company:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="company" name="" class="form-control" disabled value="iloa" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- /company -->
+                                    <!-- Payment Type -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Payment Type:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <select id="paymentType" class="select select2 form-control form-control-select2"></select>
+                                        </div>
+                                    </div>
+                                    <!-- /payment Type -->
+                                    <!-- Budget check Date -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Budget check Date<span class="text-danger">(*)</span>:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <div class="input-group">
+                                                <input id="budgetCheckDate" type="text" required class="form-control daterange-single" value="24/04/2023">
+                                                <span class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="icon-calendar22"></i></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /budget check Date -->
+                                    <!-- Due Date -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Due Date:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <div class="input-group">
+                                                <input id="dueDate" type="text" class="form-control daterange-single" value="24/04/2023">
+                                                <span class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="icon-calendar22"></i></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /due Date -->
+                                    <!-- Expense Category -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Expense Category<span class="text-danger">(*)</span>:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <select id="expenseCategory" required class="select select2 form-control form-control-select2"></select>
+                                        </div>
+                                    </div>
+                                    <!-- /expense Category -->
+                                    <!-- Description -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Description<span class="text-danger">(*)</span>:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <textarea rows="3" cols="3" id="description" name="" required class="form-control" value="abc" placeholder="Description"></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- /description -->
+                                    <!-- Attachment URL -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Attachment URL:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="attachmentURL" name="" class="form-control" disabled value="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- /attachment URL -->
+                                    <!-- Department -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Department<span class="text-danger">(*)</span>:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <select id="department" required class="select select2 form-control form-control-select2"></select>
+                                        </div>
+                                    </div>
+                                    <!-- /department-->
+                                    <!-- Center -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Center<span class="text-danger">(*)</span>:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <select id="center" required class="select select2 form-control form-control-select2"></select>
+                                        </div>
+                                    </div>
+                                    <!-- /center -->
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /payment request information -->
+                </div>
+                <div class="col-lg-4">
+                    <!-- /Vendor information -->
+                    <div class="card border-primary">
+                        <div class="card-header bg-primary-100 text-primary border-bottom-primary header-elements-inline p-1">
+                            <h6 class="card-title">Vendor information</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <form class="form-validate-jquery" action="#" novalidate="novalidate">
+                                <fieldset class="mb-3">
+                                    <!-- Vendor Account -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Vendor Account<span class="text-danger">(*)</span>:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <select id="vendorAccount" required class="select select2 form-control form-control-select2"></select>
+                                        </div>
+                                    </div>
+                                    <!-- /vendor Account -->
+                                    <!-- Vendor Name -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Vendor Name:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="vendorName" name="" class="form-control" value="" placeholder="Vendor Name">
+                                        </div>
+                                    </div>
+                                    <!-- /vendor Name -->
+                                    <!-- Beneficiary Name -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Beneficiary Name<span class="text-danger">(*)</span>:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="beneficiaryName" name="" required class="form-control" value="abc" placeholder="Beneficiary Name">
+                                        </div>
+                                    </div>
+                                    <!-- /beneficiary Name -->
+                                    <!-- Bank Account No. -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Bank Account No.<span class="text-danger">(*)</span>:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="bankAccountNo" name="" required class="form-control" value="123" placeholder="Bank Account No.">
+                                        </div>
+                                    </div>
+                                    <!-- /bank Account No. -->
+                                    <!-- Bank Name -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Bank Name<span class="text-danger">(*)</span>:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="bankName" name="" required class="form-control" value="xyz" placeholder="Bank Name">
+                                        </div>
+                                    </div>
+                                    <!-- /bank Name -->
+                                    <!-- Tax Code (Tax register No.) -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Tax Code (Tax register No.):</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="taxCode" name="" class="form-control" value="" placeholder="Tax Code (Tax register No.)">
+                                        </div>
+                                    </div>
+                                    <!-- /tax Code (Tax register No.) -->
+                                    <!-- PO Invoice Number -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">PO Invoice Number:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <select id="poInvoiceNumber" class="select select2 form-control form-control-select2"></select>
+                                        </div>
+                                    </div>
+                                    <!-- /po Invoice Number -->
+                                    <!-- Request PO Invoice -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Request PO Invoice:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <label class="custom-control custom-control-success custom-checkbox">
+                                                <input id="requestPOInvoice" type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-label"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- /request PO Invoice -->
+                                    <!-- Currency -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Currency<span class="text-danger">(*)</span>:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <select id="currency" required class="select select2 form-control form-control-select2"></select>
+                                        </div>
+                                    </div>
+                                    <!-- /currency -->
+                                    <!-- Exchange Rate -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Exchange Rate<span class="text-danger">(*)</span>:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="exchangeRate" name="" required class="form-control" disabled value="1.00" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- /exchange Rate -->
+                                    <!-- Total Amount -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Total Amount:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="totalAmount" name="" class="form-control" disabled value="0.00" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- /total Amount -->
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /vendor information -->
+                </div>
+                <div class="col-lg-4">
+                    <!-- /Workflow information -->
+                    <div class="card border-primary">
+                        <div class="card-header bg-primary-100 text-primary border-bottom-primary header-elements-inline p-1">
+                            <h6 class="card-title">Workflow information</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <form class="form-validate-jquery" action="#" novalidate="novalidate">
+                                <fieldset class="mb-3">
+                                    <!-- Status -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Status:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="status" name="" class="form-control" disabled value="Draft" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- /status -->
+                                    <!-- Assigned to User -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Assigned to User:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="assignedToUser" name="" class="form-control" disabled value="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- /assigned to User -->
+                                    <!-- Department Head -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Department Head:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="departmentHead" name="" class="form-control" disabled value="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- /department Head -->
+                                    <!-- Final Approver -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Final Approver:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="finalApprover" name="" class="form-control" disabled value="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- /final Approver -->
+                                    <!-- Budget checked Status -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Budget checked Status:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="budgetCheckedStatus" name="" class="form-control" disabled value="Budget check not performed" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- /budget checked Status -->
+                                    <!-- Message Check Budget -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Message Check Budget:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="messagedCheckBudget" name="" class="form-control" disabled value="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- /message Check Budget -->
+                                    <!-- Note -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Note:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <textarea rows="3" cols="3" type="text" id="note" name="" class="form-control" value="" placeholder="Note"></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- /note -->
+                                    <!-- WF Status -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">WF Status:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="wfStatus" name="" class="form-control" disabled value="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- /wf Status -->
+                                    <!-- Next PIC -->
+                                    <div class="form-group row mb-0">
+                                        <label class="col-form-label col-lg-3">Next PIC:</label>
+                                        <div class="col-lg-9 pt-2">
+                                            <input type="text" id="nextPIC" name="" class="form-control" disabled value="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- /next PIC -->
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /workflow information -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card border-primary">
+        <div class="card-header bg-primary text-white header-elements-inline p-1">
+            <h6 class="card-title">ERP Journal No</h6>
+        </div>
+        <div class="card-body">
+            <div class="d-flex align-items-center justify-content-between mb-2 w-40">
+                <a href="#" class="btn btn-sm btn-outline-success btn-lg"><img class="mr-2" width="20" height="20" src="img/icon-add.svg" alt="">New</a>
+                <a href="#" class="btn btn-sm btn-outline-danger btn-lg"><img class="mr-2" width="20" height="20" src="img/icon-delete.svg" alt="">Delete</a>
+                <a href="#" class="btn btn-sm btn-outline-primary btn-lg"><img class="mr-2" width="20" height="20" src="img/icon-refresh.svg" alt="">Refresh</a>
+                <a href="#" class="btn btn-sm btn-outline-primary btn-lg"><img class="mr-2" width="20" height="20" src="img/icon-import.svg" alt="">Import lines</a>
+            </div>
+            <div class="table-responsive w-50">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="d-flex justify-content-between">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" checked="">
+                                    <span class="custom-control-label p-0"></span>
+                                </label>
+                                No
+                            </th>
+                            <th>Description</th>
+                            <th>Amount (Included VAT)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="d-flex justify-content-between">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" checked="">
+                                    <span class="custom-control-label p-0"></span>
+                                </label>
+                                1
+                            </td>
+                            <td>Thong tin thanh toan</td>
+                            <td>2,000,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!-- /content area -->
+
+<script>
+    $(document).ready(function () {
+        //Payment Type.
+        var arr = [
+            { id: 0, text: 'Payment for PO' },
+            { id: 1, text: 'Payment non-PO' },
+            { id: 2, text: 'Payment for others' },
+            { id: 3, text: 'Payment in cash' }
+        ];
+
+        $('#paymentType').select2({
+            minimumResultsForSearch: Infinity,
+            data: arr
+        });
+
+        //Budget check Date
+        $('.daterange-single').pickadate({
+            today: '',
+            close: '',
+            clear: '',
+            format: 'dd/mm/yyyy',
+            //formatSubmit: 'MM/dd/yyyy',
+            onOpen: function () {
+            },
+            onSet: function () {
+            }
+        });
+
+        //Expense category.
+        var arr2 = [
+            { id: 0, text: 'Administration Expenses' }
+        ];
+
+        $('#expenseCategory').select2({
+            minimumResultsForSearch: Infinity,
+            data: arr2
+        });
+
+        //Department
+        var arr3 = [
+            { id: 0, text: 'TC - Control Exp.' }
+        ];
+
+        $('#department').select2({
+            minimumResultsForSearch: Infinity,
+            data: arr3
+        });
+
+        //Center
+        var arr4 = [
+            { id: 0, text: 'ILO-Nha Be' }
+        ];
+
+        $('#center').select2({
+            minimumResultsForSearch: Infinity,
+            data: arr4
+        });
+
+        //Center
+        var arr5 = [
+            { id: 0, text: 'VD0218' }
+        ];
+
+        $('#vendorAccount').select2({
+            minimumResultsForSearch: Infinity,
+            data: arr5
+        });
+
+        //PO Invoice Number
+        var arr6 = [
+            { id: 0, text: '--' }
+        ];
+
+        $('#poInvoiceNumber').select2({
+            minimumResultsForSearch: Infinity,
+            data: arr6
+        });
+
+        //Currency
+        var arr7 = [
+            { id: 0, text: 'VND' },
+            { id: 1, text: 'USD' },
+            { id: 2, text: 'AUD' }
+        ];
+
+        $('#currency').select2({
+            minimumResultsForSearch: Infinity,
+            data: arr7
+        });
+    });
+    
+</script>
+                <!-- Footer -->
+                <div class="navbar navbar-expand-lg navbar-light border-bottom-0 border-top">
+    <div class="text-center d-lg-none w-100">
+        <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+            <i class="icon-unfold mr-2"></i>
+            Footer
+        </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-footer">
+        <span class="navbar-text">
+            &copy; 2023 - portal - <a href="#">Privacy</a>
+        </span>
+    </div>
+</div>
+                <!-- /footer -->
+            </div>
+            <!-- /inner content -->
+        </div>
+        <!-- /main content -->
+    </div>
+    <!-- /page content -->
+    
+
+    <script src="js/site.js?v=wrKvJCitK2259D9Zspfa0NeZsmZV2s-eEIYTLoWWHIo"></script>
+    
+
+<!-- Visual Studio Browser Link -->
+<script type="text/javascript" src="_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="c0b8114284534939bfd7a3cd20399350" data-requestMappingFromServer="false" data-connectUrl="http://localhost:59222/6edaf9a5bf624c62854966237a61d83d/browserLink"></script>
+<!-- End Browser Link -->
+
+<script src="_framework/aspnetcore-browser-refresh.js"></script></body>
+</html>
